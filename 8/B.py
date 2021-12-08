@@ -6,7 +6,7 @@ total = 0
 for line in f.readlines():
     display_num = ""
     signals, output = line.strip().split('|')
-    mapping = {n: set() for n in [2, 3, 4]} 
+    mapping = {n: set() for n in range(2,5)} 
 
     for pattern in signals.split():
         if len(pattern) in mapping:
